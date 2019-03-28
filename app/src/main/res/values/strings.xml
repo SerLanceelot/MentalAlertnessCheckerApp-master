@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mental Alertness Checker App</string>
+    <string name="logo_eeg">App Logo</string>
+    <string name="mental_alertness_checker">Mental Alertness Checker</string>
+    <string name="test_message">Test Message</string>
+    <string name="mental_aletness_checker">Mental Aletness Checker</string>
+    <string name="password">Password</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="email">Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="back">Back</string>
+    <string name="send">Send</string>
+    <string name="select_your_device">Select your device</string>
+    <string name="connect_to_your_eeg_device_below">Connect to your EEG Device Below</string>
+    <string name="messages">Messages</string>
+    <string name="email_sign_in">Email:</string>
+</resources>

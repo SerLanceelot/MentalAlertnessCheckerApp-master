@@ -1,0 +1,25 @@
+Goal of 403 - Develop an algorithm in Python that when a set of EEG data was inputted the mental state of the user was determined. This 
+  algorithm would classify the user as Mentally awake, tired to the point of almost falling asleep, and essentially sleeping. Data for 
+  this semester is to be taken using a device called a muse. Multiple sessions of scenarios of a user being awake/sleepy were taken to
+  get a basis for each classification.
+
+What was accomplished in 403:
+  - A supervised learning algorithm was chosen to be the best fit for the problem of determining mental state due to its ability
+    to classify inputs into discrete states.
+  - k-NearestNeighbors was the first algorithm written to solve this problem. The algorithm itself worked fine and had very accurate 
+    results for the dataset we had in 403 but as that dataset increased it was determined that the algorithm was too slow for our 
+    purposes.
+  - A Support Vector Machine using a radial basis was then implemented to decrease the runtime. This is the algorithm currently 
+    being used.
+  - Algorithms were validated using a dataset of around 40,000 points. 70% of the data was used as the training set and 30% was
+    used as a test set.
+    
+Goal of 404 - Integrate the machine learning algorithm into the the app and begin collecting data using our system to build a dataset
+  specific to our system.
+  
+What needs to be done in 404:
+  - Edit the current algorithm from taking an entire dataset and validating it by splitting into learning/test set to learning from the
+    entire dataset saved in the cloud and waiting for inputs from the system so it can classify as they come in.
+  - Make any changes to the program so that the python code can easily interface with the app.
+  - Collect data
+  - Make edits to the algorithm as our dataset increases to increase the accuracy of the classification.

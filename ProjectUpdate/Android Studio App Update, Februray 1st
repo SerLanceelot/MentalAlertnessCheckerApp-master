@@ -1,0 +1,16 @@
+Goal of 403 - Develop a basic Android App Shell. 
+
+•	This was completed through Doing tutorials for android Studio and Firebase (connecting to Firebase, Hello world).
+•	Setting up a dummy function to send data through the database and read it out.
+•	Develop a compelling user interface, that is visually appealing and easy to use.
+•	Collect data to develop a baseline for our machine leaning algorithm.
+•	Finish all the tasks above so the project is ready to be interfaced with the other subsystems in 404.
+
+Goal of 404 - Have Android App fully functional and connected with the other 3 subsytems.
+
+•	Take more data to help train machine learning algorithm (everyone in the group will be doing this).
+•	Connect Android App to the microcontroller through Bluetooth.
+•	Interface the machine learning algorithm into the android app (maybe done through firebase MLkit).
+•	Be able to send live data through the database (to show whether that person is alert or not notifications are already running. It just needs to react to changes in the brain waves live to alert the user when ever they are on the onset of falling asleep).
+•	Store past data session on the data base so that they can be accessed at a later data through the app.
+•	Minor quality of like changes to the UI may happen once the system is fully integrated with the other subsystems.

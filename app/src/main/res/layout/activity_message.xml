@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="@drawable/gradient"
+              android:weightSum="4">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/connect_to_your_eeg_device_below"
+                android:textSize="24sp" android:textColor="@color/colorAccent"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_your_device" android:textColor="@color/colorAccent"
+                android:id="@+id/blueONOFF"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/messages"
+                android:textSize="18sp" android:textColor="@color/colorAccent"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   />
+        <Button
+                android:text="Send Notification"
+                android:id="@+id/buttonNotify"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold" android:textColor="@color/common_google_signin_btn_text_dark_pressed"/>
+
+            <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" android:textColor="@color/browser_actions_bg_grey"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tvBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="20sp" />
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="158dp"
+                   android:src="@drawable/eeg_cartoon"
+                   tools:ignore="ContentDescription"
+                   android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+        <EditText
+                android:id="@+id/edtSentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" android:textColor="@color/browser_actions_bg_grey"
+        />
+
+        <LinearLayout
+                android:id="@+id/layout_signed_in_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+            <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/back"/>
+
+            <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/send"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

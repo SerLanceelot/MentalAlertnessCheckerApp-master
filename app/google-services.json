@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "215806368732",
+    "firebase_url": "https://mental-alertness-checker.firebaseio.com",
+    "project_id": "mental-alertness-checker",
+    "storage_bucket": "mental-alertness-checker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215806368732:android:b2e70d97f40103b7",
+        "android_client_info": {
+          "package_name": "com.example.zachary.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215806368732-1nmrl3u6ihmnenncrjkrui1nmhc5f7dq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zachary.myfirstapp",
+            "certificate_hash": "56ed2400a74a3101bbaa98162647517f656553f6"
+          }
+        },
+        {
+          "client_id": "215806368732-6ct2hcj5gnreoqhfue3ihgu6vqo63v7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2WQF3jpVWFzTkewsAWkZjrznd9ytyrzQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215806368732-6ct2hcj5gnreoqhfue3ihgu6vqo63v7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215806368732:android:5458ea04874be08a",
+        "android_client_info": {
+          "package_name": "zachary.m.com.mentalalertnesscheckerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215806368732-td8piim3ge14qsjqunkvfo2n6ornnsge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zachary.m.com.mentalalertnesscheckerapp",
+            "certificate_hash": "56ed2400a74a3101bbaa98162647517f656553f6"
+          }
+        },
+        {
+          "client_id": "215806368732-6ct2hcj5gnreoqhfue3ihgu6vqo63v7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2WQF3jpVWFzTkewsAWkZjrznd9ytyrzQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215806368732-6ct2hcj5gnreoqhfue3ihgu6vqo63v7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "zachary.m.com.mentalalertnesscheckerapp"
+        minSdkVersion 16  //changed from 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android {
+
+    // ...
+
+    aaptOptions {
+        noCompress "tflite"  // Your model's file extension: "tflite", "lite", etc.
+    }
+}
+
+///apply plugin: 'com.android.application'
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:customtabs:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:animated-vector-drawable:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.firebase:firebase-messaging:12.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Firebase Authentication
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+    //firebase database
+    implementation 'com.google.firebase:firebase-database:16.0.2'
+    implementation 'com.firebase:firebase-client-android:2.5.2'
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+    //implementation 'com.firebaseui:firebase-ui-database:4.1.0'
+    kapt 'com.google.firebase:firebase-auth:16.0.3:15.0.0'  // changed from implementation
+    kapt 'com.google.firebase:firebase-database:16.0.2:15.0.0'  // changed from implementation
+    kapt 'com.google.firebase:firebase-messaging:17.0.0:15.0.0' // changed from implementation
+
+    //ML-Kit for Firebase Integration -new
+    //implementation 'org.tensorflow:tensorflow-lite:0.1.100'
+    implementation "com.google.firebase:firebase-ml-common:16.2.3"
+    implementation "com.google.firebase:firebase-ml-model-interpreter:17.0.3"
+    implementation "com.google.firebase:firebase-ml-vision:19.0.2"
+
+    // for notifications in firebase
+    //implementation 'com.google.firebase:firebase-iid:16.0.1'
+
+    //google play servies stuff
+    //implementation 'com.google.android.gms:play-servieces-location:16.0.0'
+    //implementation 'com.google.android.gms:play-services-ads:16.0.1'
+    // https://mvnrepository.com/artifact/com.google.android.gms/play-services-location
+    // implementation 'com.google.android.gms:play-servieces-places:9.2.0'
+}
+
+//apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+//com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+
+
+
+
